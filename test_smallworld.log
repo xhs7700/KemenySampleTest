@@ -1,0 +1,26 @@
+g.name = "Pseudofractal_15"
+size(g) = (21523362, 43046721)
+num_sample = 463933
+max_len = 5483
+Running time of approx_kem_sqrt is 8.228919764s
+(std_kem, test_kem_sqrt, ratio_sqrt) = (3.5817654666666664e7, 3.564695262718028e7, 0.004765863121832151)
+Running time of approx_kem_le is 13.818197693s
+(std_kem, test_kem_le, ratio_le) = (3.5817654666666664e7, 3.584861677205229e7, 0.0008644369843243378)
+g.name = "Corona_3_g"
+size(g) = (33333335, 100000000)
+num_sample = 577351
+max_len = 5570
+Running time of approx_kem_sqrt is 7.941964958s
+(std_kem, test_kem_sqrt, ratio_sqrt) = (5.328745879999999e7, 5.31809943859785e7, 0.001997926274192907)
+Running time of approx_kem_le is 19.673175148s
+(std_kem, test_kem_le, ratio_le) = (5.328745879999999e7, 5.3305826880615234e7, 0.0003446980026610841)
+g.name = "Apollo_15"
+size(g) = (28697816, 86093442)
+num_sample = 535704
+max_len = 5540
+Running time of approx_kem_sqrt is 9.266181251s
+(std_kem, test_kem_sqrt, ratio_sqrt) = (3.82547583958447e7, 3.822258158389612e7, 0.000841119204456149)
+Running time of approx_kem_le is 19.426210365s
+(std_kem, test_kem_le, ratio_le) = (3.82547583958447e7, 3.825328318429947e7, 3.856282478545723e-5)
+
+## max_len = 4000

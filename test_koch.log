@@ -1,0 +1,9 @@
+g.name = "Koch_12"
+size(g) = (33554433, 50331648)
+num_sample = 579262
+length_sample = 40000
+max_len = 5572
+Running time of approx_kem_sqrt is 79.741957202s
+(std_kem, test_kem_sqrt, ratio_sqrt) = (4.194304003333333e8, 2.6639416018277797e8, 0.36486682898743883)
+Running time of approx_kem_le is 60.793877898s
+(std_kem, test_kem_le, ratio_le) = (4.194304003333333e8, 4.493390098671875e8, 0.07130768182297936)

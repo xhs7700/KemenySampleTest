@@ -1,0 +1,14 @@
+g.name = "CayleyTree_3_23"
+size(g) = (25165822, 25165821)
+num_sample = 501656
+length_sample = 40000
+max_len = 5514
+Running time of approx_kem_sqrt is 65.776947611s
+(std_kem, test_kem_sqrt, ratio_sqrt) = (1.0485761425000166e9, 5.609854013736432e8, 0.4650027035364918)
+g.name = "HanoiExt_15"
+size(g) = (19131876, 28697814)
+num_sample = 437400
+length_sample = 40000
+max_len = 5460
+Running time of approx_kem_sqrt is 115.017466074s
+(std_kem, test_kem_sqrt, ratio_sqrt) = (2.4406411025143562e10, 6.414618604379933e8, 0.9737174851403938)

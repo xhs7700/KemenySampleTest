@@ -105,9 +105,13 @@ function approx_kem_le(g::NormalUnweightedGraph, max_len::Int, max_sample::Int)
 end
 
 function test_model(g::NormalUnweightedGraph, std_kem::Float64, tol::Float64, delta::Float64, alpha::Int, c::Int, max_sample::Int, max_len::Int)
+    @show g.name
     @show size(g)
     N, _ = size(g)
     eps = tol * N
+    len=ceil(Int,c*sqrt(N))
+    println("num_sample = $len")
+    println("length_sample = $max_len")
     get_maxlen(g, tol)
     stats_sqrt = @timed approx_kem_sqrt(g, eps, delta, alpha, c, max_len)
     test_kem_sqrt = stats_sqrt.value
@@ -161,9 +165,9 @@ end
 const tol = 0.01
 const delta = 0.1
 const alpha = 10
-const c = 30
-const max_sample = 500
-const max_len = 500
+const c = 100
+const max_sample = 128
+const max_len = 40000
 
 # test_pseudo(5, tol, delta, alpha, c, max_sample, max_len)
 # test_cayley(7, tol, delta, alpha, c, max_sample, max_len)
