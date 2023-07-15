@@ -1,0 +1,8 @@
+g.name = "CayleyTree_3_23"
+size(g) = (25165822, 25165821)
+num_sample = 501656
+length_sample = 40000
+max_len = 5514
+Running time of approx_kem_sqrt is 66.508589626s
+GC time of approx_kem_sqrt is 24.097309367s
+(std_kem, test_kem_sqrt, ratio_sqrt) = (1.0485761425000166e9, 5.607028773821099e8, 0.46527213937436973)

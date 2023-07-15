@@ -116,11 +116,13 @@ function test_model(g::NormalUnweightedGraph, std_kem::Float64, tol::Float64, de
     stats_sqrt = @timed approx_kem_sqrt(g, eps, delta, alpha, c, max_len)
     test_kem_sqrt = stats_sqrt.value
     println("Running time of approx_kem_sqrt is $(stats_sqrt.time)s")
+    println("GC time of approx_kem_sqrt is $(stats_sqrt.gctime)s")
     ratio_sqrt = getratio(std_kem, test_kem_sqrt)
     @show std_kem, test_kem_sqrt, ratio_sqrt
     stats_le = @timed approx_kem_le(g, max_len, max_sample)
     test_kem_le = stats_le.value
     println("Running time of approx_kem_le is $(stats_le.time)s")
+    println("GC time of approx_kem_le is $(stats_le.gctime)s")
     ratio_le = getratio(std_kem, test_kem_le)
     @show std_kem, test_kem_le, ratio_le
 end
